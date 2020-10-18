@@ -14,7 +14,6 @@
 </template>
 <script>
 import firebase from "firebase";
-// import FirebaseConfig from '@/configs/Firebase';
 import { Message } from "element-ui";
 export default {
   data() {

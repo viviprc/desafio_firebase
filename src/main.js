@@ -2,8 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import Vuex from 'vuex'
 import firebase from 'firebase'
 import Element from 'element-ui'
+import axios from 'axios'
 import BootstrapVue from 'bootstrap-vue'
 import 'element-ui/lib/theme-chalk/index.css';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -22,8 +24,11 @@ var firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
 Vue.use(Element);
+Vue.use(axios);
+Vue.use(Vuex);
+
 
 
 Vue.config.productionTip = false
